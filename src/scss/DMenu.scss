@@ -1,0 +1,106 @@
+@import "config";
+
+.menu {
+  width: 278px;
+  height: 100vw;
+  background-color: $menu-color;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  padding-right: 3px;
+
+  &-title {
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+  }
+
+  &-title-name {
+    color: $white-color;
+    font-weight: bold;
+  }
+
+  .search {
+    display: flex;
+    padding: 0.4rem 1rem;
+    justify-content: space-between;
+    background-color: #3F464F;
+    align-items: center;
+    box-sizing: border-box;
+
+    .control {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white-color;
+      padding: 6px 0 6px 12px;
+    }
+
+    a:hover {
+      color: #999;
+    }
+  }
+
+  .menu-sub {
+    li {
+      height: 58px;
+      background-color: $menu-sub-color;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1px;
+
+      a {
+        text-decoration: none;
+        color: $white-color;
+        padding-left: 16px;
+        font-weight: bold;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .menu-sub li:hover {
+    background-color: $click-color;
+    cursor: pointer;
+  }
+
+  .entries {
+    overflow-y: auto;
+
+    li {
+      padding: 10px 16px;
+      background-color: $menu-entry-color;
+
+      .title {
+        margin-bottom: 2px;
+        font-size: 14px;
+        color: #eaeef3;
+      }
+
+      i {
+        color: #eaeef3;
+        margin-right: 0.5rem;
+      }
+
+      .date {
+        font-size: 12px;
+        color: #eaeef3;
+      }
+    }
+
+    li:hover {
+      background-color: $menu-entry-click-color;
+      cursor: pointer;
+    }
+  }
+}
