@@ -3,7 +3,7 @@ import { DFooter, DMenu, DHeader } from '../components'
 import { User } from '../mock'
 import '../scss/main.scss'
 
-interface LayoutProps {
+type LayoutProps = {
 
 }
 

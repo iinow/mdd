@@ -1,5 +1,5 @@
 import React from 'react'
-import { Root, Login, Test } from './pages'
+import {Root, Login, Test, Edit} from './pages'
 import './scss/App.scss'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { DefaultLayout } from './layouts'
@@ -10,8 +10,11 @@ const App: React.FC = () => {
       <Router>
         <Switch>
           <Route path="/" exact>
+            <Root />
+          </Route>
+          <Route path="/edit">
             <DefaultLayout>
-              <Root />
+              <Edit/>
             </DefaultLayout>
           </Route>
           <Route path="/login">

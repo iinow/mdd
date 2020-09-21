@@ -53,7 +53,7 @@ const DMenu: React.FC = () => {
       <div className="entries">
         <ul>
           {
-            Array.apply(null, new Array(4)).map((v, index) => (
+            Array.apply(null, new Array(20)).map((v, index) => (
               <li key={index}>
                 <span className="title">이양</span>
                 <div>
